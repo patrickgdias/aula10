@@ -34,7 +34,15 @@ d = divisao(x, y)
 m = multiplicacao(x, y)
 s = substracao(x,y)
 
-print(f' A soma dos números é {a}')
-print(f' A multiplicacao dos números é {m}')
-print(f' A divisao dos números é {d}')
-print(f' A substração dos números é {s}')
+
+operacao = input('Digite a operação desejada {soma, multiplicacao, divisao, substracao}')
+match operacao:
+    case 'soma':
+        print(f' A soma dos números {x} e {y} é {a}')
+    case 'multiplicacao':
+        print(f' A multiplicacao dos números {x} e {y} é {m}')
+    case 'divisao':
+        print(f' A divisao dos números {x} e {y} é {d}')
+    case 'substracao':
+        print(f' A substração dos números {x} e {y} é {s}')
+    
